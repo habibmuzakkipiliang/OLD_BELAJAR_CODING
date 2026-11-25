@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGGER SEARCH</title>
+</head>
+<body>
+    <style>
+        #search-box{position:relative;width:100%;margin:0}
+        #search-form{height:50px;border:1px solid #999;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background-color:#fff;overflow:hidden}
+        #search-text{font-size:30px;color:#ddd;border-width:0;background:transparent}
+        #search-box input[type="text"]{width:100%;padding:11px 0 12px 1em;color:#333;outline:none}
+        #search-button{position:absolute;top:0;right:0;height:45px;width:80px;font-size:30px;color:#fff;text-align:center;line-height:42px;border-width:0;background-color:#4d90fe;-webkit-border-radius:0 5px 5px 0;-moz-border-radius:0 5px 5px 0;border-radius:0 5px 5px 0;cursor:pointer}
+        </style>
+        <div id='search-box'>
+        <form action='/search' id='search-form' method='get' target='_top'>
+        <input id='search-text' name='q' placeholder='Cari di Blog ini' type='text'/>
+        <button id='search-button' type='submit'><span>Cari</span></button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<b:widget id='LinkList63' locked='false' title='Menu based on Icons' type='LinkList' version='1'>
+  <b:widget-settings>
+    <b:widget-setting name='link-3'>https://habibmuzakkipiliang.blogspot.com/search/label/SEJARAH</b:widget-setting>
+    <b:widget-setting name='sorting'>NONE</b:widget-setting>
+    <b:widget-setting name='link-4'>https://habibmuzakkipiliang.blogspot.com/search/label/WISATA</b:widget-setting>
+    <b:widget-setting name='text-1'>CERITA</b:widget-setting>
+    <b:widget-setting name='link-1'>https://habibmuzakkipiliang.blogspot.com/search/label/CERITA</b:widget-setting>
+    <b:widget-setting name='text-0'>BIOGRAFI</b:widget-setting>
+    <b:widget-setting name='link-2'>https://habibmuzakkipiliang.blogspot.com/search/label/MITOS</b:widget-setting>
+    <b:widget-setting name='text-3'>SEJARAH</b:widget-setting>
+    <b:widget-setting name='link-0'>https://habibmuzakkipiliang.blogspot.com/search/label/BIOGRAFI</b:widget-setting>
+    <b:widget-setting name='text-2'>MITOS</b:widget-setting>
+    <b:widget-setting name='text-4'>WISATA</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+
+          <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+          <div class='widget-content'>
+              <ul>
+                  <b:loop values='data:links' var='link'>
+                      <li><a expr:href='data:link.target'><data:link.name/></a></li>
+                  </b:loop>
+              </ul>
+              <b:include name='quickedit'/>
+          </div>
+      </b:includable>
+</b:widget>
+</b:section>
+</div>
