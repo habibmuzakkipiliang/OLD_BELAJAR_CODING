@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengakuan Cinta</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 36px;
+        }
+        p {
+            color: #333333;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff69b4;
+            animation: heartbeat 1s infinite;
+            margin: 20px 0;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        button {
+            background-color: #ff69b4;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Untukmu, Member JKT48 Tercinta</h1>
+        <p>
+            Sejak pertama kali melihatmu di panggung, aku tahu ada sesuatu yang istimewa dalam dirimu.
+            Setiap gerakanmu, setiap senyummu, selalu membuat hatiku berdebar lebih cepat.
+        </p>
+        <p>
+            Kamu adalah bintang yang bersinar terang dalam hidupku, memberikan inspirasi dan semangat setiap harinya.
+            Setiap lagu yang kamu nyanyikan, setiap tarian yang kamu lakukan, selalu membawa kebahagiaan dalam hidupku.
+        </p>
+        <p>
+            Aku tahu mungkin ini terdengar seperti mimpi, tapi perasaanku sangat nyata.
+            Dengan segala hormat dan perasaan terdalamku, aku ingin mengatakan...
+        </p>
+        <p class="heart">&#10084;</p>
+        <button onclick="declareLove()">Maukah Kamu Jadi Pacarku?</button>
+    </div>
+
+    <script>
+        function declareLove() {
+            alert("Aku sangat mencintaimu dan selalu mendukungmu! Maukah kamu menjadi pacarku?");
+        }
+    </script>
+</body>
+</html>

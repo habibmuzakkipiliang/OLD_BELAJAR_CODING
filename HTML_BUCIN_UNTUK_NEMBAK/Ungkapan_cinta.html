@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ungkapan Cinta</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff4d4d;
+            font-size: 36px;
+        }
+        p {
+            color: #333333;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff4d4d;
+            animation: heartbeat 1s infinite;
+            margin: 20px 0;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        button {
+            background-color: #ff4d4d;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Untukmu, yang Terkasih</h1>
+        <p>
+            Dari pertama kali kita bertemu, aku tahu ada sesuatu yang istimewa di antara kita.
+            Senyumanmu selalu bisa mencerahkan hariku, dan kehadiranmu selalu membuat hatiku berdebar.
+        </p>
+        <p>
+            Setiap momen yang kita habiskan bersama adalah anugerah yang tak ternilai bagiku.
+            Kamu adalah alasan aku tersenyum, alasan aku bahagia, dan alasan aku merasa lengkap.
+        </p>
+        <p>
+            Aku tidak bisa lagi menahan perasaanku. Aku mencintaimu lebih dari kata-kata yang bisa kuungkapkan.
+            Dengan segala kerendahan hati, aku ingin bertanya...
+        </p>
+        <p class="heart">&#10084;</p>
+        <button onclick="declareLove()">Maukah Kamu Jadi Pacarku?</button>
+    </div>
+
+    <script>
+        function declareLove() {
+            alert("Aku sangat mencintaimu! Maukah kamu menjadi pacarku?");
+        }
+    </script>
+</body>
+</html>

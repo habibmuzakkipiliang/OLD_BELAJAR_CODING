@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff6b6b;
+        }
+        p {
+            color: #343a40;
+            font-size: 18px;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff6b6b;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        button {
+            background-color: #ff6b6b;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Untuk Kamu yang Spesial</h1>
+        <p>
+            Sejak pertama kali kita bertemu, aku tahu ada sesuatu yang istimewa di antara kita. 
+            Kamu adalah orang yang selalu membuat hariku lebih cerah, memberikan senyuman di wajahku, dan menghangatkan hatiku.
+        </p>
+        <p>
+            Aku tahu mungkin ini terdengar klise, tapi perasaanku sangat nyata. 
+            Aku mencintaimu, lebih dari yang bisa kuungkapkan dengan kata-kata. 
+            Setiap detik bersamamu adalah anugerah yang tak ternilai bagiku.
+        </p>
+        <p class="heart">&#10084;</p>
+        <button onclick="declareLove()">Maukah Kamu Jadi Pacarku?</button>
+    </div>
+
+    <script>
+        function declareLove() {
+            alert("Aku sangat mencintaimu! Maukah kamu menjadi pacarku?");
+        }
+    </script>
+</body>
+</html>
