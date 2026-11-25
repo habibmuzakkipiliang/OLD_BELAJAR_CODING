@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design Bootstrap</title>
+</head>
+<style>
+  .body {
+    background-color: black;
+    color: black;
+  }
+
+  .footer {
+    background-color: aquamarine;
+    color: black;
+  }
+
+  body,
+  main,
+  footer {
+    font-family: sans-serif;
+    font-size: medium;
+    font-style: normal;
+  }
+
+  .table,
+  td,
+  tr,
+  th {
+    border: 3px;
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: aquamarine;
+    color: black;
+  }
+
+  figcaption,
+  cite,
+  blockquote,
+  figure {
+    color: black;
+  }
+
+  nav {
+    color: black;
+  }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body class="body">
+
+  <main>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-sm-20" style="background-color: yellow;color: black;">
+          <!--NAVIGASI BAR-->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Artikel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pembayaran</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="LOGIN_ANIMASI.html">LOGIN</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      CONTOH
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">CONTOH</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+          <!--Cover Bootstrap-->
+          <link href="cover.css" rel="stylesheet">
+          </head>
+
+          <body class="d-flex h-100 text-center text-bg-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+              <symbol id="check2" viewBox="0 0 16 16">
+                <path
+                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              </symbol>
+              <symbol id="circle-half" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+              </symbol>
+              <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                <path
+                  d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+              </symbol>
+              <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+              </symbol>
+            </svg>
+
+            <div class="cover-container d-flex w-5 p-15 mx-auto flex-column" style="background-color: #FFD3B6">
+
+              <main class="px-90">
+                <h1>CONTOH WEBSITE SAYA</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellendus? Tempore
+                  nulla rem ullam voluptate similique! Deserunt, provident atque recusandae deleniti quam sit, delectus
+                  enim corrupti consequatur dolorum facere reprehenderit.</p>
+                <p class="lead">
+                  <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
+                    onclick="alert('HALO AKU SUDAH DIKLIK')">PELAJARI LEBIH LANJUT</a>
+                </p>
+            </div>
+
+            <!--KATA KATA MUTIARA-->
+            <hr>
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <p>Love Job and Life is Choice (Cintai pekerjaaan dan hidup itu adalah pilihan)</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Habib Muzakki <cite title="Source Title">11 AGAMA</cite>
+              </figcaption>
+
+              <blockquote class="blockquote">
+                <p>Jika sebuah tujuan hanya berorientasi pada kesuksesan dan tidak berorientasi pada kebahagiaan maka
+                  itu akan mengisi hidupmu dengan stres, kecemasan, dan frustasi.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Debasish Mrindha <cite title="Source Title">Wikipedia</cite>
+              </figcaption>
+            </figure>
+            <hr>
+
+            <!--SECTION TENTANG-->
+            <section id="section" class="container text-center">
+              <h2 class="mb-4">TENTANG KAMI</h2>
+              <p>Kami Habib Muzakki dari Kelas 11 Agama, dari MAN 2 Kota Serang,</p>
+            </section>
+            <hr>
+
+            <!--KONTEN SAJA-->
+            <!--Table-->
+            <strong>MEDIA AND FASHION ABG (Arena Boarding Gembira) 2025</strong>
+            <div class="table-responsive-md">
+              <table class="table-bordered">
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>Kelas</th>
+                  <th>Asal Sekolah</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Habib Muzakki</td>
+                  <td>11 AGAMA</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Adzka Hamada Faatih Jannatan</td>
+                  <td>11 AGAMA</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Humam Nu'man Syakirin</td>
+                  <td>11 IPA 4</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Niswah Zulfa Ceyda</td>
+                  <td>11 BAHASA</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Siti Zahwa</td>
+                  <td>11 IPA 1</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>Zalfa Nurul Azmi</td>
+                  <td>11 BAHASA</td>
+                  <td>MAN 2 KOTA SERANG</td>
+                </tr>
+              </table>
+            </div>
+
+            <hr>
+            <strong>BOOTSTRAP</strong>
+            <p>
+              Bootstrap itu seperti seperangkat alat bantu yang sangat berguna untuk membuat website terlihat keren dan
+              menarik, tanpa perlu menulis banyak kode yang rumit. Bayangkan kamu sedang membangun rumah menggunakan
+              lego. Bootstrap itu seperti kumpulan lego yang sudah jadi, seperti jendela, pintu, dan dinding, yang bisa
+              kamu rangkai dengan mudah untuk membuat rumah impianmu.
+
+              <br><b>Jadi, secara singkat, bootstrap adalah</b>
+            <ol>
+              <li><b>Sebuah toolkit: Seperangkat alat yang berisi berbagai macam komponen siap pakai untuk membuat
+                  tampilan website.</b></li>
+              <li><b>Untuk membuat website: Digunakan untuk membangun struktur dan tampilan website.</b></li>
+              <li><b>Responsif: Artinya website yang dibuat dengan Bootstrap akan otomatis menyesuaikan diri dengan
+                  ukuran layar, baik itu di komputer, tablet, maupun smartphone.</b></li>
+              <li><b>Mudah digunakan: Bahkan pemula sekalipun bisa dengan mudah menggunakan Bootstrap karena sudah
+                  dilengkapi dengan dokumentasi yang lengkap dan contoh-contoh yang jelas.</b></li>
+            </ol>
+
+            <br><b>Kenapa Bootstrap itu penting?</b>
+            <ol>
+              <li><b>Menghemat waktu: Karena kamu tidak perlu membuat semua elemen website dari awal.</b></li>
+              <li><b>Tampilan konsisten: Semua elemen website akan memiliki tampilan yang seragam dan profesional.</b>
+              </li>
+              <li><b>Responsif: Website kamu akan terlihat bagus di semua perangkat.</b></li>
+              <li><b>Populer: Banyak digunakan oleh para pengembang web, sehingga kamu bisa dengan mudah menemukan
+                  bantuan dan sumber belajar.</b></li>
+            </ol>
+            </p>
+            <hr>
+
+            <p>
+              <b>Tailwind CSS: Mempercepat dan Mempermudah Pengembangan Antarmuka Pengguna (tampilan) website</b>
+            </p>
+
+            <p>
+              <b>Apa itu Tailwind CSS?</b>
+            </p>
+
+            <p>
+              Tailwind CSS adalah sebuah framework CSS yang memungkinkan pengembang web untuk membangun antarmuka
+              pengguna (UI) yang unik dan disesuaikan dengan cepat untuk Website. Berbeda dengan framework CSS lain
+              seperti Bootstrap yang menyediakan komponen siap pakai, Tailwind CSS bekerja dengan cara yang berbeda.
+            </p>
+
+            <b>Konsep Utility-First</b>
+            <p>
+              Tailwind CSS menggunakan pendekatan utility-first. Artinya, alih-alih menyediakan komponen siap pakai,
+              Tailwind CSS menyediakan kelas-kelas CSS kecil yang dapat digunakan untuk mengatur gaya elemen HTML secara
+              langsung.
+            </p>
+
+            <b>Keuntungan Menggunakan Tailwind CSS</b>
+            <ul>
+              <li><b>Pengembangan Lebih Cepat:</b> Dengan menggunakan kelas-kelas utilitas yang sudah disediakan, Anda
+                tidak perlu lagi menulis kode CSS yang panjang dan berulang-ulang. Hal ini dapat mempercepat proses
+                pengembangan UI secara signifikan.</li>
+              <li><b>Desain yang Konsisten:</b> Tailwind CSS membantu Anda menjaga konsistensi desain di seluruh proyek
+                Anda. Anda dapat menggunakan kelas-kelas yang sama untuk memastikan bahwa semua elemen memiliki gaya
+                yang seragam.</li>
+              <li><b>Fleksibilitas Tinggi:</b> Anda memiliki kontrol penuh atas tampilan setiap elemen. Anda dapat
+                dengan mudah menyesuaikan gaya elemen sesuai dengan kebutuhan desain Anda.</li>
+              <li><b>Ukuran File CSS Kecil:</b> Karena menggunakan pendekatan utility-first, ukuran file CSS Tailwind
+                CSS biasanya lebih kecil dibandingkan dengan framework CSS lainnya. Hal ini dapat membantu meningkatkan
+                kinerja situs web Anda.</li>
+            </ul>
+
+            <b>Bagaimana Cara Menggunakan Tailwind CSS?</b>
+            <p>
+              Untuk menggunakan Tailwind CSS, Anda perlu menginstalnya terlebih dahulu di proyek Anda. Setelah itu, Anda
+              dapat mulai menggunakan kelas-kelas utilitas yang disediakan oleh Tailwind CSS untuk mengatur gaya elemen
+              HTML Anda.
+            </p>
+
+            <b>Kesimpulan</b>
+            <p>
+              Tailwind CSS adalah framework CSS yang sangat berguna bagi pengembang web yang ingin membangun antarmuka
+              pengguna yang unik, disesuaikan, dan konsisten dengan cepat. Jika Anda ingin mempelajari lebih lanjut
+              tentang Tailwind CSS, Anda dapat mengunjungi situs web resminya di https://tailwindcss.com/.
+            </p>
+            <hr>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span>Copyright &copy; 2025 Habib Muzakki. All rights reserved.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

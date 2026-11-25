@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkiraan Cuaca - Habib Muzakki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .weather {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .weather img {
+            width: 100px;
+        }
+        .weather-info {
+            flex: 1;
+            margin-left: 1rem;
+        }
+        .weather-info h2 {
+            margin: 0;
+        }
+        .forecast {
+            margin-top: 2rem;
+        }
+        .forecast-day {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .forecast-day:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perkiraan Cuaca - Habib Muzakki</h1>
+    </header>
+    <div class="container">
+        <div class="weather">
+            <img src="https://via.placeholder.com/100" alt="Weather Icon">
+            <div class="weather-info">
+                <h2>Jakarta</h2>
+                <p>25°C, Cerah</p>
+            </div>
+        </div>
+        <div class="forecast">
+            <h3>Perkiraan Cuaca 7 Hari Kedepan</h3>
+            <div class="forecast-day">
+                <span>Senin</span>
+                <span>26°C, Cerah</span>
+            </div>
+            <div class="forecast-day">
+                <span>Selasa</span>
+                <span>27°C, Berawan</span>
+            </div>
+            <div class="forecast-day">
+                <span>Rabu</span>
+                <span>28°C, Hujan Ringan</span>
+            </div>
+            <div class="forecast-day">
+                <span>Kamis</span>
+                <span>29°C, Cerah</span>
+            </div>
+            <div class="forecast-day">
+                <span>Jumat</span>
+                <span>30°C, Berawan</span>
+            </div>
+            <div class="forecast-day">
+                <span>Sabtu</span>
+                <span>31°C, Hujan</span>
+            </div>
+            <div class="forecast-day">
+                <span>Minggu</span>
+                <span>32°C, Cerah</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript code to fetch weather data can be added here
+    </script>
+</body>
+</html>
+<script>
+    async function fetchWeatherData() {
+        try {
+            const response = await fetch('https://api.openweathermap.org/data/2.5/onecall?lat=-6.2&lon=106.8&exclude=minutely,hourly&units=metric&appid=YOUR_API_KEY');
+            const data = await response.json();
+            updateWeather(data);
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+        }
+    }
+
+    function updateWeather(data) {
+        const currentWeather = data.current;
+        const dailyForecast = data.daily;
+
+        document.querySelector('.weather-info h2').textContent = 'Jakarta';
+        document.querySelector('.weather-info p').textContent = `${currentWeather.temp}°C, ${currentWeather.weather[0].description}`;
+
+        const forecastContainer = document.querySelector('.forecast');
+        forecastContainer.innerHTML = '<h3>Perkiraan Cuaca 7 Hari Kedepan</h3>';
+
+        dailyForecast.forEach((day, index) => {
+            if (index === 0) return; // Skip the current day
+            const date = new Date(day.dt * 1000);
+            const dayName = date.toLocaleDateString('id-ID', { weekday: 'long' });
+            const forecastDay = document.createElement('div');
+            forecastDay.className = 'forecast-day';
+            forecastDay.innerHTML = `<span>${dayName}</span><span>${day.temp.day}°C, ${day.weather[0].description}</span>`;
+            forecastContainer.appendChild(forecastDay);
+        });
+    }
+
+    fetchWeatherData();
+</script>
